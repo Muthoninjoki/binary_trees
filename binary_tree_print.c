@@ -76,7 +76,7 @@ void binary_tree_print(const binary_tree_t *tree)
 		return;
 	for (i = 0; i < height + 1; i++)
 	{
-		s[i] = malooc(sizeof(**S) * 255);
+		s[i] = malloc(sizeof(**s) * 255);
 		if (!s[i])
 			return;
 		memset(s[i], 32, 255);
